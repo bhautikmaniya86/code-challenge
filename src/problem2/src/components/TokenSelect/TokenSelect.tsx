@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, forwardRef, ForwardedRef } from "react";
 import { ChevronDown, Search } from "lucide-react";
-import { Token } from "../types/token";
+import { Token } from "../../types/token";
 
 interface TokenSelectProps {
   value: Token | null;
@@ -39,12 +39,16 @@ function TokenSelect(
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+      <label
+        htmlFor={label}
+        className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+      >
         {label}
       </label>
 
       <button
         type="button"
+        id={label}
         onClick={() => setIsOpen(!isOpen)}
         ref={ref}
         className="w-full border border-gray-300 dark:border-gray-600 rounded-lg py-2 px-3 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:text-white"

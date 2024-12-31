@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 
 import { Loader2 } from "lucide-react";
-import { Token } from "../types/token";
-import { fetchTokenPrices } from "../api/tokens";
-import { FormInputType, SwapForm } from "../forms/SwapForm";
+import { Token } from "../../types/token";
+import { fetchTokenPrices } from "../../api/tokens";
+import { SwapForm } from "../../forms";
+import { FormInputType } from "../../forms/SwapForm/SwapForm";
 
 export function SwapCurrency() {
   const [currencies, setCurrencies] = useState<Token[]>([]);
@@ -68,6 +69,7 @@ export function SwapCurrency() {
         <Loader2
           className="animate-spin text-blue-500 dark:text-blue-400"
           size={32}
+          role="status"
         />
       </div>
     );

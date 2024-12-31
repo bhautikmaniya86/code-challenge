@@ -1,9 +1,8 @@
 import { ArrowDownUp, Loader2 } from "lucide-react";
-
-import { Token } from "../types/token";
-import { CurrencyIcon } from "../components/CurrencyIcon";
 import { Controller, useForm } from "react-hook-form";
-import TokenSelect from "../components/TokenSelect";
+
+import { Token } from "../../types/token";
+import { CurrencyIcon, TokenSelect } from "../../components";
 
 export type FormInputType = {
   fromCurrency: Token | null;
@@ -60,6 +59,7 @@ export function SwapForm({
 
   return (
     <form
+      role="form"
       onSubmit={handleSubmit(onSubmit)}
       className="max-w-lg mx-auto shadow-lg p-6 h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 border-s"
     >

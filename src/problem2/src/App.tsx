@@ -1,6 +1,5 @@
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { ThemeToggle } from "./components/ThemeToggle";
-import { SwapCurrency } from "./components/SwapCurrency";
+import { SwapCurrency, ThemeToggle } from "./components";
 
 function App() {
   return (
