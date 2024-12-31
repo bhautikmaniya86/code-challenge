@@ -5,7 +5,7 @@ import { SwapCurrency } from "./components/SwapCurrency";
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-4">
+      <div className="min-h-screen flex items-center justify-center p-4 bg-background bg-cover bg-center">
         <ThemeToggle />
         <SwapCurrency />
       </div>

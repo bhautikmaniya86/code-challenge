@@ -61,11 +61,9 @@ export function SwapForm({
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="max-w-lg w-full mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6"
+      className="max-w-lg mx-auto shadow-lg p-6 h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 border-s"
     >
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-        Swap
-      </h2>
+      <h2 className="text-2xl font-bold text-white mb-6">Swap</h2>
 
       <div className="space-y-6">
         <div>
@@ -112,7 +110,7 @@ export function SwapForm({
                 },
               })}
               placeholder="0.00"
-              className="w-full bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:text-white dark:placeholder-gray-400 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+              className="w-full border bg-transparent border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:text-white dark:placeholder-gray-400 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
               step="any"
             />
             {!!errors?.amount?.message && (
