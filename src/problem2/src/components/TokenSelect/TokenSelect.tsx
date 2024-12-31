@@ -51,7 +51,7 @@ function TokenSelect(
         id={label}
         onClick={() => setIsOpen(!isOpen)}
         ref={ref}
-        className="w-full border border-gray-300 dark:border-gray-600 rounded-lg py-2 px-3 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:text-white"
+        className="w-full bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg py-2 px-3 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:text-white"
       >
         {value ? (
           <span className="flex items-center gap-2">

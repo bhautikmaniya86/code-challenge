@@ -3,11 +3,7 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
-    extend: {
-      backgroundImage: {
-        'background': "url('./src/assets/images/background.jpg')",
-      }
-    },
+    extend: {},
   },
   plugins: [],
 };
